@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto";
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 90%;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+body {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+header {
+    background-color: #EAC926;
+    text-align: center;
+    width: 100%;
+}
+
+.DivLogo {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.TopLogo {
+    width: 50%;
+    align-content: center;
+}
+
+.barraBusq {
+    width: 50%;
+    align-content: center;
+}
+
+.DivLogo p {
+    justify-self: center;
+    width: 100%;
+}
+
+
+header img {
+    width: 100%;
+}
+
+.banner img {
+    width: 100vw;
+    display: block;
+}
+
+header div input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+header button {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header button i {
+    margin-left: 5px;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03264C;
+    color: white;
+    width: 35px;
+    height: 30px;
+    font-size: medium;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.burger-menu i {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 15px;
+}
+
+.descripcion {
+    font-size: 16px;
+    visibility: hidden;
+    padding-top: 30px;
+    color: gray;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: rgb(17, 237, 17);
+}
+
+
+.DivFooter {
+    display: block;
+    background-color: white;
+    text-align: center;
+    color: #03264C;
+    width: 100vw;
+    box-shadow: 0px 0px 11px 0px rgba(130, 114, 130, 1);
+}
+
+.DivFooter i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: color 500ms;
+}
+
+.DivFooter i:hover {
+    color: #39b54a;
+}
+
+.DivFooter div p {
+    margin: 0;
+    padding: 30px;
+}
+
+.DivFooter section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+.DivFooter section h4 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.textof {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textof p {
+    font-size: 13px;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.textof section i {
+    font-size: 2em;
+    color: #1259c3;
+}
+
+article {
+    margin-bottom: 10px;
+    border: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: #fff;
+    text-align: start;
+    width: 100%;
+
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.articulos .precio {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.articulos .descuento {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: rgb(31, 196, 31);
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    transition: transform 500ms;
+}
+
+article:hover .logo {
+    transform: rotate(-90deg);
+
+}
+
+article:hover {
+    box-shadow: 9px 9px 14px -5px rgba(0, 0, 0, 0.75);
+}
+
+article:hover .descripcion {
+    visibility: visible;
+    transition: all 1000ms
+}
+
+
+
+@media (min-width: 361px) {
+    h3 {
+        display: contents;
+    }
+
+    nav ul {
+        display: contents;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+    article {
+        justify-content: space-around;
+        width: 42%;
+    }
+}
+
+
+
+@media (min-width: 769px) {
+    nav {
+        display: flex;
+        margin: 30px;
+
+    }
+
+    .Menu1 {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        gap: 10px;
+    }
+
+    .Menu2 {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        gap: 15px;
+    }
+
+
+    .TopLogo {
+        width: 33%;
+        align-content: center;
+    }
+
+    .barraBusq {
+        width: 33%;
+        align-content: center;
+    }
+
+    .DivLogo p {
+        width: 33%;
+        align-content: center;
+    }
+
+    article {
+        width: 20%;
+    }
+
+    nav ul {
+        display: contents;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    article {
+        justify-content: space-around;
+        width: 20%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .DivFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+
+    .DivFooter section {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+    }
+
+    .DivFooter div {
+        width: 30vw;
+    }
+
+}

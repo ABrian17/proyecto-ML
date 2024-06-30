@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/HomeStyle.css">
+    <link rel="stylesheet" href="/css/registerStyle.css">
+    <title>Creá tu cuenta</title>
+</head>
+
+<body>
+    <header>
+        <div class="DivLogo">
+            <img class="TopLogo" src="images/logo-mercado-liebre.svg" />
+            <div class="barraBusq">
+                <input type="text" placeholder="Buscar productos, marcas...">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <p><i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de credito</p>
+        </div>
+        <nav>
+            <div class="Menu1">
+                <ul type="disc">
+                    <li><a href="/Ofertas">Ofertas</a></li>
+                    <li><a href="/Tienda-oficiales">Tienda Oficiales</a></li>
+                    <li><a href="/Vender">Vender</a></li>
+                    <li><a href="/Ayuda">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="Menu2">
+                <ul type="disc">
+                    <li><a href="/register">Crea tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
+                    <li><a href="/login">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="/Mis-compras">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="banner">
+            <img src="images/img-home-banner.jpg" />
+        </div>
+    </header>
+    <main>
+        <form method="post">
+            <div class="Nombre">
+                <input type="text" name="name" id="name" placeholder="Nombre y apellido" maxlength="15" minlength="10"
+                    required>
+                <span class="error error-name">Este campo es obligatorio</span>
+            </div>
+            <div class="UserName">
+                <input type="text" name="UserName" id="UserName" placeholder="Nombre de usuario">
+                <span class="error error-Username">Este campo es obligatorio</span>
+            </div>
+            <div class="email">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <span class="error error-email">Este campo es obligatorio</span>
+            </div>
+            <label>
+                <h4>Fecha de nacimiento</h4>
+            </label>
+            <div class="FechaNac">
+                <input type="date" name="FechaNac" id="FechaNac" placeholder="Fecha de Nacimiento">
+            </div>
+            <div class="domicilio">
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+                <span class="error error-domicilio">Este campo es obligatorio</span>
+            </div>
+            <label>
+                <h4>Perfil de usuario</h4>
+            </label>
+            <div class="ClassUser">
+                <input type="radio" name="Opcion" id="Radio1" value="Comprador">
+                <label for="Radio1">Comprador</label>
+                <input type="radio" name="Opcion" id="Radio2" value="Vendedor">
+                <label for="Radio2">Vendedor</label>
+            </div>
+            <label>
+                <h4>Intereses</h4>
+            </label>
+            <div class="intereses">
+                <div class="items">
+                    <input class="selecc" type="checkbox" name="check1" id="check1" value="Electro">
+                    <label class="seleccLabel" for="check1">Electro</label>
+                </div>
+                <div class="items">
+                    <input class="selecc" type="checkbox" name="check2" id="check2" value="Moda">
+                    <label class="seleccLabel" for="check1">Moda</label>
+                </div>
+                <div class="items">
+                    <input class="selecc" type="checkbox" name="check3" id="check3" value="Hogar">
+                    <label class="seleccLabel" for="check1">Hogar</label>
+                </div>
+                <div class="items">
+                    <input class="selecc" type="checkbox" name="check4" id="check4" value="Jugueteria">
+                    <label class="seleccLabel" for="check1">Jugueteria</label>
+                </div>
+                <div class="items">
+                    <input class="selecc" type="checkbox" name="check5" id="check5" value="Vida">
+                    <label class="seleccLabel" for="check1">Vida Sana</label>
+                </div>
+            </div>
+            <label>
+
+                <h4>Ingrese su foto de perfil</h4>
+            </label>
+            <div class="Foto">
+                <input type="file" name="Foto" id="Foto" accept=".jpg">
+            </div>
+            <div class="contraseña">
+                <input type="password" name="contraseña" id="contraseña" placeholder="Ingesar contraseña" required>
+                <span class="error error-contraseña">Este campo es obligatorio</span>
+            </div>
+            <div class="contraseña2">
+                <input type="password" name="contraseña2" id="contraseña2" placeholder="Ingresar contraseña nuevamente"
+                    required>
+                <span class="error error-contraseña2">Este campo es obligatorio</span>
+            </div>
+            <div class="ok">
+                <input type="submit" value="Confirmar" name="ok" id="ok">
+            </div>
+            <div class="reiniciar">
+                <input type="reset" value="Borrar todo" name="reiniciar" id="reiniciar">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
